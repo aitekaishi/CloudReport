@@ -1,0 +1,71 @@
+
+.my-house.data-v-022fa448{
+		padding: 24rpx;
+		background-color: #F8F9FB;
+		min-height: 100vh;
+}
+.my-house-title.data-v-022fa448{
+	font-size: 24rpx;
+	color: #666666;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.my-house-title-right image.data-v-022fa448{
+	width: 20rpx;
+	margin-right: 10rpx;
+}
+.my-house-title-right.data-v-022fa448{
+	background: #FFFFFF;
+	padding: 10rpx 20rpx;
+	border-radius: 12rpx;
+}
+.my-house-title-left.data-v-022fa448{
+	position: relative;
+	top:10rpx;
+}
+.myhouse.data-v-022fa448{
+	width: 710rpx;
+	height: 800rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding:20rpx;
+	background: #FFFFFF;
+	margin-top: 30rpx;
+	border-radius: 12rpx;
+}
+.myhousea.data-v-022fa448{
+		font-size: 28rpx;
+		color: #333333;
+		line-height: 70rpx;
+		font-weight: 700;
+}
+.myhouseb.data-v-022fa448{
+		font-size: 28rpx;
+		color: #666666;
+		line-height: 70rpx;
+}
+.myhousebb text.data-v-022fa448{
+		margin-left: 55rpx;
+}
+.myhouseb text.data-v-022fa448{
+		color: #FFFFFF;
+		padding: 5rpx 40rpx;
+		background: #FF9900;
+		border-radius: 12rpx;
+}
+.addhouse-add.data-v-022fa448{
+		background: #FF9900;
+		color: #ffffff;
+		width: 440rpx;
+		border-radius: 12rpx;
+		text-align: center;
+		margin: 50rpx auto;
+		padding: 15rpx;
+}
+

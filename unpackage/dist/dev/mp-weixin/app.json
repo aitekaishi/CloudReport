@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cloud/cloud",
+    "pages/payment/payment",
+    "pages/assess/assess",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/order-from/order-from",
+    "pages/order-details/order-details",
+    "pages/cloud-image/cloud-image",
+    "pages/rectify/rectify",
+    "pages/rectify-repot/rectify-repot",
+    "pages/myhouse/myhouse",
+    "pages/my-house/my-house",
+    "pages/no-house/no-house",
+    "pages/add-house/add-house",
+    "pages/house-details/house-details",
+    "pages/change-house/change-house"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

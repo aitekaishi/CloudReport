@@ -1,0 +1,33 @@
+
+.cloud-image {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.cloud-image image {
+	vertical-align: middle !important;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+swiper {
+	height: 100vh !important;
+}
+swiper-item{
+	height: 100vh !important;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+

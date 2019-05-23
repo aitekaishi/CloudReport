@@ -1,0 +1,63 @@
+
+.my-housea.data-v-40cc74be{
+	padding: 24rpx;
+	background-color: #F8F9FB;
+	min-height: 100vh;
+}
+.my-house-title.data-v-40cc74be{
+	font-size: 24rpx;
+	color: #666666;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.my-house-title-right image.data-v-40cc74be{
+	width: 20rpx;
+	margin-right: 10rpx;
+}
+.my-house-title-right.data-v-40cc74be{
+	background: #FFFFFF;
+	padding: 10rpx 20rpx;
+	border-radius: 12rpx;
+}
+.my-house-title-left.data-v-40cc74be{
+	position: relative;
+	top:10rpx;
+}
+.my-house-contain.data-v-40cc74be{
+	width: 710rpx;
+	height: 462rpx;
+	background: #FFFFFF;
+	border-radius: 12rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 30rpx;
+	padding: 30rpx 20rpx;
+}
+.my-house-contain-title.data-v-40cc74be{
+	font-size: 28rpx;
+	color: #333333;
+	font-weight: 700;
+	line-height: 65rpx;
+}
+.my-house-contain-titlea.data-v-40cc74be{
+	font-size: 28rpx;
+	color: #666666;
+	line-height: 65rpx;
+}
+.addhouse-add.data-v-40cc74be{
+	background: #FF9900;
+	color: #ffffff;
+	width: 440rpx;
+	border-radius: 12rpx;
+	text-align: center;
+	margin: 50rpx auto;
+	padding: 15rpx;
+}
+

@@ -1,0 +1,28 @@
+
+.xixiaaaa.data-v-4f7ed0e0{
+	display: none !important;
+}
+.gongdione-one.data-v-4f7ed0e0 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 40rpx 22rpx;
+}
+.gongdione-one-left.data-v-4f7ed0e0 {
+	font-size: 28rpx;
+	color: #333333;
+	font-weight: 600;
+}
+.gongdione-one-right.data-v-4f7ed0e0 {
+	font-size: 28rpx;
+	color: #999999;
+	padding: 0rpx 30rpx;
+	border: 2rpx solid #999999;
+	border-radius: 30rpx;
+}
+

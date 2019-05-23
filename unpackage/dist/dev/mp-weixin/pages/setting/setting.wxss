@@ -1,0 +1,16 @@
+
+.none {
+	width: 100%;
+	height: 10rpx;
+	background: #F9F9FB;
+}
+.uni-list:before,
+.uni-list:after,
+.uni-list-cell__container:after {
+	background: #FFFFFF;
+}
+.setting {
+	background: #F9F9FB;
+	min-height: 100vh;
+}
+

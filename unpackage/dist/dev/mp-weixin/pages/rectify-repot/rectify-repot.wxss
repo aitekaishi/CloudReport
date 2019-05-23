@@ -1,0 +1,33 @@
+
+.cloud-suoming-titlea {
+	font-size: 28rpx;
+	color: #666666;
+	margin-bottom: 10rpx;
+}
+.clouda {
+	padding: 20rpx;
+}
+.cloud-suominga {
+	font-size: 32rpx;
+	color: #333333;
+	font-weight: 600;
+	margin-bottom: 10rpx;
+	margin-top: 40rpx;
+}
+.item_lista {
+	width: 230rpx;
+	height: auto;
+	margin-right: 7rpx;
+	display: inline-block;
+}
+.item_lista image{
+	height: 188rpx;
+	width: 220rpx;
+}
+.scroll-view_x{
+	height: 188rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 10rpx;
+}
+

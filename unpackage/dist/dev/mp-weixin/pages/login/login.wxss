@@ -1,0 +1,24 @@
+
+.page-title.data-v-f622fd9c {
+	font-size: 46rpx;
+	text-align: center;
+}
+.page-contain.data-v-f622fd9c {
+	font-size: 32rpx;
+	color: #9b9b9b;
+	text-align: center;
+}
+.none.data-v-f622fd9c {
+	height: 260rpx;
+}
+button.data-v-f622fd9c {
+	width: 426rpx;
+	height: 86rpx;
+	line-height: 86rpx;
+	background: #ff9900;
+	font-size: 34rpx;
+	color: #ffffff;
+	border: none;
+	margin-top: 600rpx;
+}
+

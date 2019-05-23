@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "佰橙优家",
+  "usingComponents": {
+    "housekeep": "/components/housekeep",
+    "myinfo": "/components/myinfo",
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker",
+    "denglu": "/components/denglu"
+  }
+}

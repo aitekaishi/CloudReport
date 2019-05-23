@@ -1,0 +1,1 @@
+<view class="setting" bind:__l="__l"><view class="none"></view><view class="none"></view><uni-list vue-slots="{{['default']}}"><uni-list-item title="退出登录" note="{{note}}" data-event-opts="{{[['^click',[['loginOut']]]]}}" bind:click="__e"></uni-list-item></uni-list></view>

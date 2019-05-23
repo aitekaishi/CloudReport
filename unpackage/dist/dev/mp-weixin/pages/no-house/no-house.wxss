@@ -1,0 +1,14 @@
+
+.nohouse.data-v-77d5b45e{
+		background: #F9F9FB;
+		min-height: 100vh;
+}
+.nohouse image.data-v-77d5b45e{
+	width: 100vw;
+}
+.addhouse.data-v-77d5b45e{
+	position: fixed;
+	bottom: 0;
+	height: 90rpx;
+} 
+

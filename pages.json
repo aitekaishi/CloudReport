@@ -1,0 +1,113 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "佰橙优家"
+			}
+		}
+		,{
+		    "path" : "pages/cloud/cloud",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/payment/payment",
+		    "style" : {
+				"navigationBarTitleText": "立即支付"
+			}
+		},
+		{
+		    "path" : "pages/assess/assess",
+		    "style" : {
+				"navigationBarTitleText": "评价"
+			}
+		},
+		{
+            "path" : "pages/setting/setting",
+            "style" : {
+				"navigationBarTitleText": "设置"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "登录"
+			}
+        }
+        ,{
+            "path" : "pages/order-from/order-from",
+            "style" : {
+				"navigationBarTitleText": "我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/order-details/order-details",
+            "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/cloud-image/cloud-image",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/rectify/rectify",
+            "style" : {
+            	"navigationBarTitleText": "整改验收报告"
+            }
+        }
+        ,{
+            "path" : "pages/rectify-repot/rectify-repot",
+            "style" : {
+            	"navigationBarTitleText": "整改验收报告"
+            }
+        },
+		{
+		    "path" : "pages/myhouse/myhouse",
+		    "style" : {
+				"navigationBarTitleText": "我的房屋"
+			}
+		},
+		
+		{
+		    "path" : "pages/my-house/my-house",
+		    "style" : {
+				"navigationBarTitleText": "我的房屋"
+			}
+		},
+		{
+		    "path" : "pages/no-house/no-house",
+		    "style" : {
+				"navigationBarTitleText": "我的房屋"
+			}
+		}
+		
+		,{
+		    "path" : "pages/add-house/add-house",
+		    "style" : {
+				"navigationBarTitleText": "添加房屋"
+			}
+		}
+		,{
+		    "path" : "pages/house-details/house-details",
+		    "style" : {
+				"navigationBarTitleText": "房屋信息"
+			}
+		},
+		{
+		    "path" : "pages/change-house/change-house",
+		    "style" : {
+				"navigationBarTitleText": "修改房屋信息"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	} ,
+	"navigateToMiniProgramAppIdList": [
+    "wxe6c9e42e3b5227d0"
+  ] 
+}

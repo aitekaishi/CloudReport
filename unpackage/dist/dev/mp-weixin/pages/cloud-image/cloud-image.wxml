@@ -1,0 +1,1 @@
+<view class="cloud-image" bind:__l="__l"><swiper current="{{indexnum}}" data-event-opts="{{[['change',[['change',['$event']]]]]}}" bindchange="__e"><block wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><swiper-item><image lazy-load src="{{item}}"></image></swiper-item></block></block></swiper></view>

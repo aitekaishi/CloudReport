@@ -1,0 +1,49 @@
+.assess-contain {
+  width: 100vw;
+  min-height: 100vh;
+  background: #F8F9FB;
+}
+.assess-contain .assess-text {
+  margin-top: 10rpx;
+  display: inline-block;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #9B9B9B;
+}
+.assess-contain .assess-text2 {
+  float: right;
+  margin-right: 30rpx;
+}
+.assess-contain .uni-textarea {
+  width: 100vw;
+  height: 306rpx;
+  background: #FFFFFF;
+  padding: 24rpx 0 0 30rpx;
+  margin: 15rpx 0 33rpx 0;
+  font-size: 32rpx;
+}
+.assess-contain .rate-class {
+  margin-left: 200rpx;
+  background: red;
+}
+.true {
+  background: #FF9900;
+}
+.false {
+  background: #C3C3C3;
+}
+button {
+  border-radius: 0;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+button::after {
+  border: none;
+}
+textarea {
+  width: 690rpx;
+}
+

@@ -1,0 +1,120 @@
+
+.cloud-contain.data-v-032f09ca{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+}
+.cloud.data-v-032f09ca {
+	padding: 20rpx;
+}
+.cloud-one.data-v-032f09ca {
+	font-size: 28rpx;
+	color: #333333;
+	font-weight: 600;
+}
+.cloud-time.data-v-032f09ca {
+	font-size: 28rpx;
+	color: #999999;
+}
+.cloud-tiancog.data-v-032f09ca {
+	height: 30rpx;
+}
+.cloud-suoming.data-v-032f09ca {
+	font-size: 32rpx;
+	color: #333333;
+	font-weight: 600;
+	margin-bottom: 10rpx;
+}
+.cloud-suoming-title.data-v-032f09ca {
+	font-size: 28rpx;
+	color: #666666;
+	margin-bottom: 10rpx;
+}
+.cloud-image.data-v-032f09ca {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.cloud-image image.data-v-032f09ca {
+	width: 220rpx;
+	height: 188rpx;
+	margin: 8rpx;
+}
+.uni-steps-item-descb-img.data-v-032f09ca {
+	width: 30rpx;
+	height: 30rpx;
+	margin-right: 10rpx;
+	position: relative;
+	top: 5rpx;
+}
+.shoufqing.data-v-032f09ca {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 28rpx;
+	color: #666666;
+	padding: 10rpx 10rpx 10rpx 28rpx;
+	background: #eeeeee;
+	border-radius: 26rpx;
+	margin-bottom: 20rpx;
+}
+.shoufqing-right image.data-v-032f09ca {
+	width: 24rpx;
+	height: 24rpx;
+}
+.scroll_box.data-v-032f09ca {
+	height: 188rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 10rpx;
+}
+.item_list.data-v-032f09ca {
+	width: 230rpx;
+	height: auto;
+	margin-right: 7rpx;
+	display: inline-block;
+}
+.item_list image.data-v-032f09ca{
+	height: 188rpx;
+	width: 220rpx;
+}
+@-webkit-keyframes name-data-v-032f09ca{
+from{height: 0;}
+to{height: 188rpx;}
+}
+@keyframes name-data-v-032f09ca{
+from{height: 0;}
+to{height: 188rpx;}
+}
+.axio.data-v-032f09ca{
+		-webkit-animation: name-data-v-032f09ca 0.1s;
+		        animation: name-data-v-032f09ca 0.1s;
+}
+.hahahh.data-v-032f09ca{
+		height: 0;
+}
+.disable.data-v-032f09ca{
+		display: block;
+}
+.noneliupan.data-v-032f09ca{
+		display: none;
+}
+
