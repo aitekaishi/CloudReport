@@ -54,6 +54,7 @@
 
 
 
+
 var _md = _interopRequireDefault(__webpack_require__(/*! md5 */ "C:\\Users\\ThinkPad\\Desktop\\CloudReport\\node_modules\\md5\\md5.js"));
 var leanCloud = _interopRequireWildcard(__webpack_require__(/*! leancloud-storage/dist/av-weapp.js */ "C:\\Users\\ThinkPad\\Desktop\\CloudReport\\node_modules\\leancloud-storage\\dist\\av-weapp.js"));function _interopRequireWildcard(obj) {if (obj && obj.__esModule) {return obj;} else {var newObj = {};if (obj != null) {for (var key in obj) {if (Object.prototype.hasOwnProperty.call(obj, key)) {var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};if (desc.get || desc.set) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}}newObj.default = obj;return newObj;}}function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
@@ -100,8 +101,8 @@ var leanCloud = _interopRequireWildcard(__webpack_require__(/*! leancloud-storag
 //
 //
 //
-var _default = { data: function data() {return { header: '', name: '', phone: '' };}, methods: { work: function work() {var _this = this;var queryaaa = new leanCloud.Query('MyHouse');queryaaa.equalTo('user', leanCloud.User.current());queryaaa.find().then(function (res) {uni.setStorageSync('activeIndex', 2);if (res.length > 0) {uni.navigateTo({ url: '../myhouse/myhouse' });} else {uni.navigateTo({ url: '../no-house/no-house' });}}, function (error) {});}, myOrder: function myOrder() {console.log("我的订单");var _this = this;var query = new leanCloud.Query('Order');query.equalTo('user', leanCloud.User.current());query.find().then(function (res) {console.log(res);for (var i = 0; i < res.length; i++) {if (res[i].attributes.status == '待付款') {console.log('待付款');console.log((new Date() - res[i].createdAt) / 60000);if ((new Date() - res[i].createdAt) / 60000 > 30) {var todo = leanCloud.Object.createWithoutData('Order', res[i].id);todo.destroy().then(function (success) {
-              }, function (error) {
+//
+var _default = { data: function data() {return { header: '', name: '', phone: '' };}, methods: { work: function work() {var _this = this;var queryaaa = new leanCloud.Query('MyHouse');queryaaa.equalTo('user', leanCloud.User.current());queryaaa.find().then(function (res) {uni.setStorageSync('activeIndex', 2);if (res.length > 0) {uni.navigateTo({ url: '../myhouse/myhouse' });} else {uni.navigateTo({ url: '../no-house/no-house' });}}, function (error) {});}, myOrder: function myOrder() {console.log("我的订单");var _this = this;var query = new leanCloud.Query('Order');query.equalTo('user', leanCloud.User.current());query.find().then(function (res) {console.log(res);for (var i = 0; i < res.length; i++) {if (res[i].attributes.status == '待付款') {console.log('待付款');console.log((new Date() - res[i].createdAt) / 60000);if ((new Date() - res[i].createdAt) / 60000 > 30) {var todo = leanCloud.Object.createWithoutData('Order', res[i].id);todo.destroy().then(function (success) {}, function (error) {
 
               });
             }

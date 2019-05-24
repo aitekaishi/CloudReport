@@ -621,7 +621,7 @@ export default {
 			uni.setStorageSync('shouyedizhi', e.label);
 			var OrderQuery = new leanCloud.Query('Order');
 			OrderQuery.equalTo('user', leanCloud.User.current())
-				.equalTo('address', e.label);
+				.equalTo('address', e.label).equalTo('status', '已支付')
 			OrderQuery.find().then(
 				function(res) {
 					console.log('获取订单');
@@ -781,7 +781,7 @@ export default {
 									_this.containedItems = res;
 									console.log(_this.containedItems);
 									_this.len = _this.containedItems.length;
-									uni.hideLoading();
+									
 								},
 								function(error) {}
 							);
@@ -896,6 +896,10 @@ export default {
 			const _this = this;
 			_this.xixib = false;
 			_this.login = false;
+			uni.showLoading({
+				mask: true,
+				title: '加载中'
+			});
 			uni.removeStorageSync('getPhoneNumber');
 			uni.setStorageSync('getPhoneNumber', 1);
 			if (uni.getStorageSync('purePhoneNumber') == '') {

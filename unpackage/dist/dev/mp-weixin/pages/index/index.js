@@ -378,24 +378,43 @@ var WXBizDataCrypt = __webpack_require__(/*! ../../WXBizDataCrypt */ "C:\\Users\
                             console.log(res);
                             _this.day = res.length;
                             console.log(uni.getStorageSync('fuwutype'));
+                            var queryb = new leanCloud.Query('Order');
+                            queryb.equalTo('objectId', uni.getStorageSync('fuwutype'));
+                            queryb.find().then(
+                            function (resa) {
+                              console.log('resa');
+                              console.log(resa);
+                              if (resa[0].attributes.serviceType == '全程监理服务（29元/m²）') {
+                                _this.progress = parseInt(res.length / 23 * 100);
+                              } else {
+                                _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);}
+                            },
+                            function (error) {});
 
-                            if (uni.getStorageSync('fuwutype') == '全程监理服务（29元/m²）') {
-                              _this.progress = parseInt(res.length / 23 * 100);
-                            } else {
-                              _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);
-                            }
                             for (var i = 0; i < res.length; i++) {
-                              res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
-                              res[i].updatedAt =
-                              new Date(res[i].updatedAt.toString()).getFullYear() +
-                              '年' + (
-                              new Date(res[i].updatedAt.toString()).getMonth() + 1) +
-                              '月' +
-                              new Date(res[i].updatedAt.toString()).getDate() +
-                              '日';
+                              if (!res[i].attributes.data[0].data[0]) {
+                                res[i].attributes.data[0].data[0] = '';
+                                res[i].updatedAt =
+                                new Date(res[i].updatedAt.toString()).getFullYear() +
+                                '年' + (
+                                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                                '月' +
+                                new Date(res[i].updatedAt.toString()).getDate() +
+                                '日';
+                              } else {
+                                res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
+                                res[i].updatedAt =
+                                new Date(res[i].updatedAt.toString()).getFullYear() +
+                                '年' + (
+                                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                                '月' +
+                                new Date(res[i].updatedAt.toString()).getDate() +
+                                '日';
+                              }
+
                             }
                             _this.createdAtsuccess = res[res.length - 1].updatedAt;
-                            _this.containedItems = res.reverse();
+                            _this.containedItems = res;
                             console.log(_this.containedItems);
                             _this.len = _this.containedItems.length;
                             uni.hideLoading();
@@ -506,24 +525,43 @@ var WXBizDataCrypt = __webpack_require__(/*! ../../WXBizDataCrypt */ "C:\\Users\
                             console.log(res);
                             _this.day = res.length;
                             console.log(uni.getStorageSync('fuwutype'));
+                            var queryb = new leanCloud.Query('Order');
+                            queryb.equalTo('objectId', uni.getStorageSync('fuwutype'));
+                            queryb.find().then(
+                            function (resa) {
+                              console.log('resa');
+                              console.log(resa);
+                              if (resa[0].attributes.serviceType == '全程监理服务（29元/m²）') {
+                                _this.progress = parseInt(res.length / 23 * 100);
+                              } else {
+                                _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);}
+                            },
+                            function (error) {});
 
-                            if (uni.getStorageSync('fuwutype') == '全程监理服务（29元/m²）') {
-                              _this.progress = parseInt(res.length / 23 * 100);
-                            } else {
-                              _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);
-                            }
                             for (var i = 0; i < res.length; i++) {
-                              res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
-                              res[i].updatedAt =
-                              new Date(res[i].updatedAt.toString()).getFullYear() +
-                              '年' + (
-                              new Date(res[i].updatedAt.toString()).getMonth() + 1) +
-                              '月' +
-                              new Date(res[i].updatedAt.toString()).getDate() +
-                              '日';
+                              if (!res[i].attributes.data[0].data[0]) {
+                                res[i].attributes.data[0].data[0] = '';
+                                res[i].updatedAt =
+                                new Date(res[i].updatedAt.toString()).getFullYear() +
+                                '年' + (
+                                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                                '月' +
+                                new Date(res[i].updatedAt.toString()).getDate() +
+                                '日';
+                              } else {
+                                res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
+                                res[i].updatedAt =
+                                new Date(res[i].updatedAt.toString()).getFullYear() +
+                                '年' + (
+                                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                                '月' +
+                                new Date(res[i].updatedAt.toString()).getDate() +
+                                '日';
+                              }
+
                             }
                             _this.createdAtsuccess = res[res.length - 1].updatedAt;
-                            _this.containedItems = res.reverse();
+                            _this.containedItems = res;
                             console.log(_this.containedItems);
                             _this.len = _this.containedItems.length;
                             uni.hideLoading();
@@ -593,7 +631,7 @@ var WXBizDataCrypt = __webpack_require__(/*! ../../WXBizDataCrypt */ "C:\\Users\
       uni.setStorageSync('shouyedizhi', e.label);
       var OrderQuery = new leanCloud.Query('Order');
       OrderQuery.equalTo('user', leanCloud.User.current()).
-      equalTo('address', e.label);
+      equalTo('address', e.label).equalTo('status', '已支付');
       OrderQuery.find().then(
       function (res) {
         console.log('获取订单');
@@ -714,26 +752,46 @@ var WXBizDataCrypt = __webpack_require__(/*! ../../WXBizDataCrypt */ "C:\\Users\
             console.log(res);
             _this.day = res.length;
             console.log(uni.getStorageSync('fuwutype'));
-            if (uni.getStorageSync('fuwutype') == '全程监理服务（29元/m²）') {
-              _this.progress = parseInt(res.length / 23 * 100);
-            } else {
-              _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);
-            }
+            var queryb = new leanCloud.Query('Order');
+            queryb.equalTo('objectId', uni.getStorageSync('fuwutype'));
+            queryb.find().then(
+            function (resa) {
+              console.log('resa');
+              console.log(resa);
+              if (resa[0].attributes.serviceType == '全程监理服务（29元/m²）') {
+                _this.progress = parseInt(res.length / 23 * 100);
+              } else {
+                _this.progress = parseInt(res.length / uni.getStorageSync('progressA') * 100);}
+            },
+            function (error) {});
+
             for (var i = 0; i < res.length; i++) {
-              res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
-              res[i].updatedAt =
-              new Date(res[i].updatedAt.toString()).getFullYear() +
-              '年' + (
-              new Date(res[i].updatedAt.toString()).getMonth() + 1) +
-              '月' +
-              new Date(res[i].updatedAt.toString()).getDate() +
-              '日';
+              if (!res[i].attributes.data[0].data[0]) {
+                res[i].attributes.data[0].data[0] = '';
+                res[i].updatedAt =
+                new Date(res[i].updatedAt.toString()).getFullYear() +
+                '年' + (
+                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                '月' +
+                new Date(res[i].updatedAt.toString()).getDate() +
+                '日';
+              } else {
+                res[i].attributes.data[0].data[0] = res[i].attributes.data[0].data[0].match(/(\S*)&download/)[1];
+                res[i].updatedAt =
+                new Date(res[i].updatedAt.toString()).getFullYear() +
+                '年' + (
+                new Date(res[i].updatedAt.toString()).getMonth() + 1) +
+                '月' +
+                new Date(res[i].updatedAt.toString()).getDate() +
+                '日';
+              }
+
             }
             _this.createdAtsuccess = res[res.length - 1].updatedAt;
-            _this.containedItems = res.reverse();
+            _this.containedItems = res;
             console.log(_this.containedItems);
             _this.len = _this.containedItems.length;
-            uni.hideLoading();
+
           },
           function (error) {});
 
@@ -848,6 +906,10 @@ var WXBizDataCrypt = __webpack_require__(/*! ../../WXBizDataCrypt */ "C:\\Users\
       var _this = this;
       _this.xixib = false;
       _this.login = false;
+      uni.showLoading({
+        mask: true,
+        title: '加载中' });
+
       uni.removeStorageSync('getPhoneNumber');
       uni.setStorageSync('getPhoneNumber', 1);
       if (uni.getStorageSync('purePhoneNumber') == '') {

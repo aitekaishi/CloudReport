@@ -39,6 +39,7 @@
 					<view class="weui-cell__ft weui-cell__ft_in-access"></view>
 				</navigator>
 			</button>
+			<view class="bottom"></view>
 		</view>
 	</view>
 </template>

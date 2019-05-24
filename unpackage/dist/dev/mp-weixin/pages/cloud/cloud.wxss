@@ -117,4 +117,9 @@ to{height: 188rpx;}
 .noneliupan.data-v-032f09ca{
 		display: none;
 }
+.qqqq.data-v-032f09ca{
+		font-size: 32rpx;
+		font-weight: 600;
+		text-align: center;
+}
 
