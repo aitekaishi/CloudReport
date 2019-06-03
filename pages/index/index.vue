@@ -228,6 +228,9 @@ export default {
 	computed: {
 		navbarSliderClass() {
 			let _this = this;
+			console.log('navbarSliderClass')
+			_this.activeIndex2 = false;
+			_this.activeIndex1 = false;
 			/* if (uni.getStorageSync('getPhoneNumber') == 1) {
 				uni.showLoading({
 					mask: true,
@@ -247,6 +250,19 @@ export default {
 							MyHouseQuery.equalTo('user', leanCloud.User.current()).equalTo('status', '已支付');
 							MyHouseQuery.find().then(
 								function(res) {
+									if (res.length == 0) {
+										uni.showToast({
+											title: '暂未添加房屋',
+											icon: 'none'
+										});
+										uni.hideLoading();
+										_this.activeIndex2 = false;
+										_this.activeIndex1 = false;
+										return;
+									} else {
+										_this.activeIndex2 = true;
+										_this.activeIndex1 = true;
+									}
 									console.log('1.请求Order');
 									console.log(res);
 									var MyHouseTitle = [];
@@ -261,19 +277,6 @@ export default {
 										MyHouseTitle.push(JSON.parse('{"label":"' + temp[i] + '"}'));
 									}
 									_this.pickerSingleArray = MyHouseTitle.reverse();
-									if (res.length == 0) {
-										uni.showToast({
-											title: '暂未添加房屋',
-											icon: 'none'
-										});
-										uni.hideLoading();
-										_this.activeIndex2 = false;
-										_this.activeIndex1 = false;
-										return;
-									} else {
-										_this.activeIndex2 = true;
-										_this.activeIndex1 = true;
-									}
 									if (uni.getStorageSync('shouyedizhi') == '') {
 										_this.address = res[res.length - 1].attributes.address;
 									} else {

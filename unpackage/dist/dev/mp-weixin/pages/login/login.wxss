@@ -1,17 +1,17 @@
 
-.page-title.data-v-f622fd9c {
+.page-title.data-v-f64b84b2 {
 	font-size: 46rpx;
 	text-align: center;
 }
-.page-contain.data-v-f622fd9c {
+.page-contain.data-v-f64b84b2 {
 	font-size: 32rpx;
 	color: #9b9b9b;
 	text-align: center;
 }
-.none.data-v-f622fd9c {
+.none.data-v-f64b84b2 {
 	height: 260rpx;
 }
-button.data-v-f622fd9c {
+button.data-v-f64b84b2 {
 	width: 426rpx;
 	height: 86rpx;
 	line-height: 86rpx;

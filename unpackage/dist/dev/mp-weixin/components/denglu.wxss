@@ -1,8 +1,8 @@
 
-.xixiaaaa.data-v-bc273454 {
+.xixiaaaa.data-v-bc4fbb6a {
 	display: none;
 }
-.uni-mask.data-v-bc273454 {
+.uni-mask.data-v-bc4fbb6a {
 	width: 100vw;
 	height: 5060rpx;
 	background: rgba(0, 0, 0, 0.9);
@@ -10,7 +10,7 @@
 	top: 0;
 	z-index: 1000;
 }
-.denglu.data-v-bc273454 {
+.denglu.data-v-bc4fbb6a {
 	width: 650rpx;
 	margin: 0 auto;
 	background: #ffffff;
@@ -24,7 +24,7 @@
 	        box-sizing: border-box;
 	padding: 60rpx;
 }
-button.data-v-bc273454 {
+button.data-v-bc4fbb6a {
 	border: none;
 	width: 530rpx;
 	height: 88rpx;
@@ -35,7 +35,7 @@ button.data-v-bc273454 {
 	line-height: 88rpx;
 	margin-top: 40rpx;
 }
-.denglu-title.data-v-bc273454 {
+.denglu-title.data-v-bc4fbb6a {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -45,28 +45,28 @@ button.data-v-bc273454 {
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 }
-image.data-v-bc273454 {
+image.data-v-bc4fbb6a {
 	width: 52rpx;
 	height: 66rpx;
 }
-.denglu-title text.data-v-bc273454 {
+.denglu-title text.data-v-bc4fbb6a {
 	font-size: 32rpx;
 	color: #666666;
 	position: relative;
 	top: -20rpx;
 	left: 20rpx;
 }
-.bottoma.data-v-bc273454 {
+.bottoma.data-v-bc4fbb6a {
 	height: 2rpx;
 	background: #cccccc;
 }
-.denglu-title-title.data-v-bc273454 {
+.denglu-title-title.data-v-bc4fbb6a {
 	font-size: 30rpx;
 	color: #666666;
 	text-align: center;
 	margin-top: 30rpx;
 }
-.shouquan.data-v-bc273454 {
+.shouquan.data-v-bc4fbb6a {
 	color: #ffffff;
 	background: #ff9900;
 }

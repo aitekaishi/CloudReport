@@ -1,64 +1,64 @@
 
-.myinfo.data-v-2e2e29ad {
+.myinfo.data-v-2e19e622 {
 	text-align: left;
 }
-button.data-v-2e2e29ad {
+button.data-v-2e19e622 {
 	border: none;
 	text-align: left;
 }
-image.data-v-2e2e29ad {
+image.data-v-2e19e622 {
 	width: 46rpx;
 	height: 46rpx;
 	position: relative;
 	left: -15rpx;
 }
-.weui-cell.data-v-2e2e29ad {
+.weui-cell.data-v-2e19e622 {
 	padding: 10rpx !important;
 }
-.weui-cell__bd.data-v-2e2e29ad {
+.weui-cell__bd.data-v-2e19e622 {
 	font-size: 32rpx;
 	caption-side: #333333;
 }
-.weui-cell__ft_in-access.data-v-2e2e29ad {
+.weui-cell__ft_in-access.data-v-2e19e622 {
 	font-size: 28rpx;
 }
-.bottom.data-v-2e2e29ad {
+.bottom.data-v-2e19e622 {
 	height: 2rpx;
 	background: #ededed;
 	width: 712rpx;
 	margin: 0 auto;
 }
-.myinfo-header.data-v-2e2e29ad {
+.myinfo-header.data-v-2e19e622 {
 	padding: 32rpx 50rpx;
 	background: -webkit-linear-gradient(#ff9900, #f1b04d); /* Safari 5.1 - 6.0 */
 }
-.image-header.data-v-2e2e29ad {
+.image-header.data-v-2e19e622 {
 	width: 100rpx;
 	height: 110rpx;
 	border-radius: 50%;
 	position: relative;
 	top: 10rpx;
 }
-.text-header.data-v-2e2e29ad {
+.text-header.data-v-2e19e622 {
 	font-size: 40rpx;
 	color: #ffffff;
 	position: relative;
 	top: -50rpx;
 }
-.text-phone.data-v-2e2e29ad {
+.text-phone.data-v-2e19e622 {
 	font-size: 28rpx;
 	color: #ffffff;
 }
-.buton.data-v-2e2e29ad {
+.buton.data-v-2e19e622 {
 	display: inline-block;
 	position: relative;
 	left: -160rpx;
 	top: 30rpx;
 }
-.weui-cells.data-v-2e2e29ad:after {
+.weui-cells.data-v-2e19e622:after {
 	border-bottom: none;
 }
-.xixiaaaa.data-v-2e2e29ad {
+.xixiaaaa.data-v-2e19e622 {
 	display: none;
 }
 

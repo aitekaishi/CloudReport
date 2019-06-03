@@ -57,8 +57,10 @@
         /* 小程序特有相关 */
         "appid" : "wxd16393f5438c5881",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {},
+        "navigateToMiniProgramAppIdList" : [ "wxe6c9e42e3b5227d0" ]
     }
 }
